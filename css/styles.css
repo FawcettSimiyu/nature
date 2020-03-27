@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+  }
+   
+  .nav ul {
+    list-style: none;
+    background-color: rgb(11, 81, 122);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .nav li {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+  }
+   
+  .nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+  }
+   
+  .nav a:hover {
+    background-color: #b3c22f;
+  }
+   
+  .nav a.active {
+    background-color: rgb(6, 46, 43);
+    color: rgb(156, 148, 148);
+    cursor: default;
+  }
+   
+    .nav li {
+      display: inline-block;
+      margin-right: -4px;
+    }
+    .column {
+        float: left;
+        width: 33.33%;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+        background-color: rgb(49, 119, 184);
+        color: white;
+        text-align: center;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
+      @media screen and (min-width: 600px) {
+        .nav li {
+          width: 120px;
+          border-bottom: none;
+          height: 50px;
+          line-height: 50px;
+          font-size: 1.4em;
+        }
